@@ -41,6 +41,7 @@ section {
 h2 {
     margin-bottom: 20px;
     color: #88b04b;
+    text-align: center;
 }
 
 .gallery .grid {
@@ -55,11 +56,12 @@ h2 {
     text-align: center;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+.placeholder {
+    background-color: #e0e0e0;
+    padding: 60px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 
 .map iframe {
