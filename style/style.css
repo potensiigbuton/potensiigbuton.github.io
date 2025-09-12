@@ -173,42 +173,76 @@ footer {
   }
 }
 
-.search-box {
-  margin: 15px 0;
+/* ==============================
+   Filter & Search
+============================== */
+#filter-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
 }
 
-.search-box input,
-.search-box select {
-  flex: 1;
-  padding: 8px;
+#filter-section label {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+#filter-section select,
+#filter-section input[type="text"] {
+  padding: 8px 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
 }
 
-.search-box button {
-  background: #009999;
+#filter-section select:focus,
+#filter-section input[type="text"]:focus {
+  border-color: #2e7d32;
+}
+
+/* ==============================
+   Tabel Data (update)
+============================== */
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table thead {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
   color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.search-box button:hover {
-  background: #007777;
+table th, table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
 }
 
-.reset-btn {
-  background: #ccc;
-  color: black;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
+table tbody tr:hover {
+  background: #f9f9f9;
 }
 
-.reset-btn:hover {
-  background: #aaa;
+table tbody tr.no-data td {
+  text-align: center;
+  color: #888;
+  font-style: italic;
 }
