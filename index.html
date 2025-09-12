@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peta Indikasi Geografis Kepulauan Buton</title>
   <link rel="stylesheet" href="style/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -67,35 +67,40 @@
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
 
-  <section id="filter-section">
-    <label for="filterKabupaten">Filter Kabupaten:</label>
-    <select id="filterKabupaten">
-      <option value="">Semua</option>
-    </select>
+    <!-- Filter Section -->
+    <section id="filter-section">
+      <label for="filterKabupaten">Filter Kabupaten:</label>
+      <select id="filterKabupaten">
+        <option value="">Semua</option>
+      </select>
 
-    <label for="filterKecamatan">Filter Kecamatan:</label>
-    <select id="filterKecamatan">
-      <option value="">Semua</option>
-    </select>
-  </section>
+      <label for="filterKecamatan">Filter Kecamatan:</label>
+      <select id="filterKecamatan">
+        <option value="">Semua</option>
+      </select>
+    </section>
 
-  <section id="table-section">
-    <table id="data-table">
-      <thead>
-        <tr>
-          <th>Produk</th>
-          <th>Kabupaten</th>
-          <th>Kecamatan</th>
-          <th>Desa</th>
-          <th>Status IG</th>
-          <th>Status Konservasi</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Data dimuat dari CSV -->
-      </tbody>
-    </table>
-  </section>
+    <!-- Table Section -->
+    <section id="table-section">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Kabupaten</th>
+            <th>Kecamatan</th>
+            <th>Desa</th>
+            <th>Status IG</th>
+            <th>Status Konservasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data dari CSV -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Peta Adat & Indikasi Geografis Kepulauan Buton. Semua Hak Dilindungi.</p>
