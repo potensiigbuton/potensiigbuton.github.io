@@ -69,42 +69,33 @@
     <!-- Contoh Tabel -->
     <div class="table-container">
       <h2>Contoh Data Potensi Indikasi Geografis</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Komoditas</th>
-            <th>Ketersediaan</th>
-            <th>Kabupaten</th>
-            <th>Kecamatan</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Rumput Laut Cottoni</td>
-            <td>Melimpah</td>
-            <td>Buton Tengah</td>
-            <td>Mawasangka Timur</td>
-          </tr>
-          <tr>
-            <td>Ikan Teri Kering</td>
-            <td>Melimpah</td>
-            <td>Buton Tengah</td>
-            <td>Mawasangka Induk</td>
-          </tr>
-          <tr>
-            <td>Rajungan</td>
-            <td>Melimpah</td>
-            <td>Buton Tengah</td>
-            <td>Lakudo</td>
-          </tr>
-          <tr>
-            <td>Kerajinan Anyaman</td>
-            <td>Rentan</td>
-            <td>Buton Tengah</td>
-            <td>Gu</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <?php
+      $file = fopen("DataIG_Final.csv", "r");
+      if ($file !== false) {
+          echo "<table border='1'>";
+          // Ambil header
+          if (($header = fgetcsv($file, 1000, ",")) !== false) {
+              echo "<thead><tr>";
+              foreach ($header as $col) {
+                  echo "<th>" . htmlspecialchars($col) . "</th>";
+              }
+              echo "</tr></thead><tbody>";
+          }
+          // Ambil isi data
+          while (($row = fgetcsv($file, 1000, ",")) !== false) {
+              echo "<tr>";
+              foreach ($row as $col) {
+                  echo "<td>" . htmlspecialchars($col) . "</td>";
+              }
+              echo "</tr>";
+          }
+          echo "</tbody></table>";
+          fclose($file);
+      } else {
+          echo "<p>Tidak dapat membuka file CSV.</p>";
+      }
+      ?>
     </div>
   </div>
 
