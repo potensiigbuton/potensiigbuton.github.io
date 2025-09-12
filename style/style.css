@@ -172,3 +172,43 @@ footer {
     font-size: 14px;
   }
 }
+
+.search-box {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-box input,
+.search-box select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background: #009999;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #007777;
+}
+
+.reset-btn {
+  background: #ccc;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.reset-btn:hover {
+  background: #aaa;
+}
