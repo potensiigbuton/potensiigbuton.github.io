@@ -6,16 +6,16 @@
   <title>Potensi Indikasi Geografis - Kabupaten Buton</title>
   <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body data-kabupaten ="Buton Tengah">
   <header>
     <h1>Kabupaten Buton</h1>
     <p>Data potensi sumber daya hayati, kerajinan, dan hasil laut di wilayah Kabupaten Buton.</p>
   </header>
 
-  <div id="navbar"></div>
+  <div id="navbar-container"></div>
 
   <div class="container">
-    <h2>Data Potensi Kabupaten Buton</h2>
+    <h2>Data Potensi Kabupaten Buton Tengah</h2>
     <section class="intro">
     <p>
       Kabupaten Buton dikenal sebagai daerah yang kaya akan sumber daya alam 
@@ -26,38 +26,26 @@
     </p>
   </section>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Komoditas</th>
-          <th>Ketersediaan</th>
-          <th>Kabupaten</th>
-          <th>Kecamatan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Sisir Tenun</td>
-          <td>-</td>
-          <td>Buton</td>
-          <td>Pasarwajo</td>
-        </tr>
-        <tr>
-          <td>Rumput Laut</td>
-          <td>Melimpah</td>
-          <td>Buton</td>
-          <td>Lasalimu</td>
-        </tr>
-        <tr>
-          <td>Jambu Mete</td>
-          <td>Melimpah</td>
-          <td>Buton</td>
-          <td>Kapontori</td>
-        </tr>
-      </tbody>
-    </table>
+   </section>
+
+    <section id="filter-section">
+      <label for="filterKabupaten">Filter Kabupaten:</label>
+      <select id="filterKabupaten"><option value="">Semua</option></select>
+    </section>
+
+    <section id="table-section">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Produk</th><th>Kabupaten</th><th>Kecamatan</th><th>Desa</th><th>Status IG</th><th>Status Konservasi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
   </div>
 
-  <div id="footer"></div>
+  <div id="footer-container"></div>
 </body>
 </html>
