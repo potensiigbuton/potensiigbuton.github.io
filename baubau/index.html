@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potensi Indikasi Geografis - Kabupaten Buton</title>
   <link rel="stylesheet" href="../style/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script defer src="../script/script.js"></script>
 </head>
 <body>
   <header>
@@ -32,36 +34,21 @@
     </p>
   </section>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Komoditas</th>
-          <th>Ketersediaan</th>
-          <th>Kabupaten</th>
-          <th>Kecamatan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Sisir Tenun</td>
-          <td>-</td>
-          <td>Buton</td>
-          <td>Pasarwajo</td>
-        </tr>
-        <tr>
-          <td>Rumput Laut</td>
-          <td>Melimpah</td>
-          <td>Buton</td>
-          <td>Lasalimu</td>
-        </tr>
-        <tr>
-          <td>Jambu Mete</td>
-          <td>Melimpah</td>
-          <td>Buton</td>
-          <td>Kapontori</td>
-        </tr>
-      </tbody>
-    </table>
+    <section id="filter-section">
+      <label for="filterKabupaten">Filter Kabupaten:</label>
+      <select id="filterKabupaten"><option value="">Semua</option></select>
+    </section>
+
+    <section id="table-section">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Produk</th><th>Kabupaten</th><th>Kecamatan</th><th>Desa</th><th>Status IG</th><th>Status Konservasi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
   </div>
 
   <footer>
