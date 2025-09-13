@@ -6,6 +6,10 @@
   <title>Potensi Indikasi Geografis - Kabupaten Buton</title>
   <link rel="stylesheet" href="../style/style.css">
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script>
+    const defaultKabupaten = "Baubau";
+    const hideKabupatenFilter = true;
+  </script>
   <script defer src="../script/script.js"></script>
 </head>
 <body data-kabupaten="Baubau">
@@ -28,11 +32,7 @@
     </p>
   </section>
 
-    <section id="filter-section">
-      <label for="filterKabupaten">Filter Kabupaten:</label>
-      <select id="filterKabupaten"><option value="">Semua</option></select>
-    </section>
-
+ 
     <section id="table-section">
       <table id="data-table">
         <thead>
@@ -44,6 +44,8 @@
       </table>
     </section>
   </div>
+  </div>
+  <!-- Script -->
 
   <div id="footer-container"></div>
 </body>

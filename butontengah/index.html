@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potensi Indikasi Geografis - Kabupaten Buton</title>
   <link rel="stylesheet" href="../style/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script defer src="../script/script.js"></script>
 </head>
 <body data-kabupaten ="Buton Tengah">
   <header>
-    <h1>Kabupaten Buton</h1>
+    <h1>Kabupaten Buton Tengah</h1>
     <p>Data potensi sumber daya hayati, kerajinan, dan hasil laut di wilayah Kabupaten Buton.</p>
   </header>
 
@@ -26,13 +28,7 @@
     </p>
   </section>
 
-   </section>
-
-    <section id="filter-section">
-      <label for="filterKabupaten">Filter Kabupaten:</label>
-      <select id="filterKabupaten"><option value="">Semua</option></select>
-    </section>
-
+    </div>
     <section id="table-section">
       <table id="data-table">
         <thead>
@@ -45,7 +41,13 @@
     </section>
   </div>
   </div>
-
+  <!-- Script -->
+  <script>
+    // Tetapkan kabupaten default untuk halaman ini
+    const defaultKabupaten = "Buton Tengah";
+    const hideKabupatenFilter = true; // Jangan tampilkan dropdown kabupaten
+  </script>
+  <script src="../script/script.js"></script>
   <div id="footer-container"></div>
 </body>
 </html>

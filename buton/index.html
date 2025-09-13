@@ -6,6 +6,10 @@
   <title>Potensi Indikasi Geografis - Kabupaten Buton</title>
   <link rel="stylesheet" href="../style/style.css">
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script>
+    const defaultKabupaten = "Buton";
+    const hideKabupatenFilter = true;
+  </script>
   <script defer src="../script/script.js"></script>
 </head>
 <body data-kabupaten="Buton">
@@ -28,30 +32,19 @@
       </p>
     </section>
 
-    <!-- Filter: pada Kabupaten (preselected = Buton) -->
-    <section id="filter-section">
-      <label for="filterKabupaten">Filter Kabupaten:</label>
-      <select id="filterKabupaten">
-        <option value="">Semua</option>
-      </select>
-    </section>
 
     <!-- Tabel -->
     <section id="table-section">
       <table id="data-table">
         <thead>
           <tr>
-            <th>Produk</th>
-            <th>Kabupaten</th>
-            <th>Kecamatan</th>
-            <th>Desa</th>
-            <th>Status IG</th>
-            <th>Status Konservasi</th>
+            <th>Produk</th><th>Kabupaten</th><th>Kecamatan</th><th>Desa</th><th>Status IG</th><th>Status Konservasi</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
-    </section>  </div>
+    </section>  
+  </div>
 
   <div id="footer-container"></div>
 </body>
