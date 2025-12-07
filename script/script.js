@@ -20,7 +20,7 @@ loadComponent(prefix + "footer.html", "footer-container");
 // ==============================
 // CSV + Filter Kabupaten & Kecamatan
 // ==============================
-const csvFile = isRoot ? "assets/DataIG_Final.csv" : "../assets/DataIG_Final.csv";
+const csvFile = isRoot ? "assets/DataIG_Final_Update.csv" : "../assets/DataIG_Final_Update.csv";
 const kabupatenTarget = document.body.getAttribute("data-kabupaten"); // ⭐ target kabupaten dari halaman
 let tableData = [];
 
